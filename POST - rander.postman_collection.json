@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "b33b24cc-4894-4237-92d6-710bf5d571b7",
+		"name": "貼文集合 - rander",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34334207"
+	},
+	"item": [
+		{
+			"name": "取得所有貼文",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodetask2-mongoose.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"nodetask2-mongoose",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增單筆貼文",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"學長\",\r\n    \"content\": \"加油加油加油!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodetask2-mongoose.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"nodetask2-mongoose",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除所有貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodetask2-mongoose.onrender.com/posts",
+					"protocol": "https",
+					"host": [
+						"nodetask2-mongoose",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除單筆貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodetask2-mongoose.onrender.com/posts/9999",
+					"protocol": "https",
+					"host": [
+						"nodetask2-mongoose",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						"9999"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "編輯單筆貼文",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"大猩猩\",\r\n    \"content\": \"守住籃下! 籃板王就是你!!\",\r\n    \"image\":\"\",\r\n    \"likes\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://nodetask2-mongoose.onrender.com/posts/9999",
+					"protocol": "https",
+					"host": [
+						"nodetask2-mongoose",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"posts",
+						"9999"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
